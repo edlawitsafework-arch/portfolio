@@ -1,20 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Projects</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portfolio of Eden Wubshet, Software Engineering 
+    Student and inspiring web developer in Addis Ababa.">
+    <meta name="keywords" content=" portifolio of Eden Wubshet, Software Engineering student and 
+    aspiring web developer , HTML">
+    <meta name="author" content="Eden Wubshet">
+    <title>Projects | Eden Wubshet , </title>
+    <link rel="icon" type="images/png" href="images/favicon.png">
 </head>
-
 <body>
-
-    <p>
-        <a href="index.html">&larr; Back to home</a>
-    </p>
-
-    <h1>My Projects</h1>
-
+    <header>
+    <nav>
+    <a href="index.html">Back to Home -></a>
+    </nav>
+    <h1>My projects</h1>
+    <p>Details of every project I have built. the summary table comes here</p>
+    </header>
+    <main>
+    <article id="calculator">
+     <h3>Simple Calculator</h3>
+    <img src="images/project-calculator.png" alt="screenshot of calculator that multiply 12 * 3 = 36"
+   width="400" height="250">
+   <p>A calculator that adds ,substract ,multiplies and divides</p>
+   <h3>Watch the demo</h3>
+<video controls poster="images/project-demo-poster.jpg" width="640" height="360">
+<source src="media/project-demo.mp4" type="video/mp4">
+<source src="media/project-demo.webm" type="video/webm">
+<track src="media/project-demo.vtt" kind="captions" srclang="en" label="English"
+default>
+Your browser does not support the video tag.
+</video>
+   <details>
+    <summary>How I Built It</summary>
+   <ol>
+    <li>Designed the calculator</li>
+    <li>Added number buttons</li>
+    <li>Implemented calculations</li>
+    <li>Test the results</li>
+   </ol>
+   </details>
+   <h3>Technologies used</h3>
+   <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+   </ul>
+   </article>
+   <article id="library">
+   <h3>Library Management System</h3>
+   <img src="images/project-library.png" alt="screenshot of library management system that Add Books, view Books and issue Books
+   " width="400" height="250">
+   <p>console program for borrowing and returning books</p>
+   <details>
+    <summary>how I built It</summary>
+   <ol>
+   <li>planned the system</li>
+   <li>created book records</li>
+   <li>Added sear h and display functions</li>
+   <li>Test the system</li>
+</ol>
+   </details>
+<h3>Technologies used</h3>
+<ul>
+    <li>C++</li>
+    <li>File handling</li>
+    </article>
+</ul>
 <table border="1">
-
     <caption>Project Summary</caption>
 
     <thead>
@@ -27,25 +82,19 @@
     </thead>
 
     <tbody>
-
         <tr>
             <td>Simple Calculator</td>
             <td>HTML, CSS, JavaScript</td>
             <td>2026</td>
-            <td>
-                <a href="#calculator">View Project</a>
-            </td>
+            <td><a href="#calculator">View Project</a></td>
         </tr>
 
         <tr>
-            <td>Project Library</td>
-            <td>HTML, CSS, JavaScript</td>
+            <td>Library Management System</td>
+            <td>C++</td>
             <td>2026</td>
-            <td>
-                <a href="#library">View Project</a>
-            </td>
+            <td><a href="#library">View Project</a></td>
         </tr>
-
     </tbody>
 
     <tfoot>
@@ -54,27 +103,13 @@
             <td>2</td>
         </tr>
     </tfoot>
-
 </table>
-
-<p>
-    Details of every project I have built. The summary table comes in lab 7.
-</p>
-    <h3 id="calculator">Simple Calculator</h3>
-
-    <img src="images/project-calculator.png"
-     alt="Screenshot of the calculator showing 12 + 30 = 42"
-     width="400"
-     height="250">
-
-    <p>
-        A calculator that adds, subtracts, multiplies and divides.
-    </p>
-  <h3>Library management system</h3>
-<img src="images/project-library.png"
-     alt="Screenshot of the library console"
-     width="400"
-     height="250">
-<p>A console program for borrowing and returning books.</p>
+    <a href="https//www.w3.org/">W3C HTML Refrence</a>
+    <p> <a href="index.html#contact">Contact</a></p>
+    </main>
+    <footer>
+         <p>&copy; 2026 Eden Wubshet. All right reserved.</p>
+    </footer>
+   
 </body>
 </html>
