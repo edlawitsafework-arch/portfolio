@@ -11,6 +11,7 @@
 </head>
 <body>
     <header>
+        <canvas id="logo" width="120" height="120">Edlawit safework logo</canvas>
 <h1>Edlawit Safework</h1>
 <img src="images/profile.jpg" alt="portrait of Edlawit Safework smiling" title="Edlawit Safework" width="200" height="200">
 <p>software engineer and web developer.</p>
@@ -100,6 +101,9 @@ allowfullscreen>
 <meter id="lvl-js" value="0.2" min="0" max="1" low="0.3" high="0.7"
 optimum="1">20%</meter>
 </p>
+<canvas id="skillChart" width="300" height="150">
+    A chart showing my skill levels.
+</canvas>
 <h3>My Learning Roadmap</h3>
 <ol type="1">
 <li>HTML structure and content</li>
@@ -311,5 +315,47 @@ pattern="0[79][0-9]{8}" title="10 digits starting with 09 or 07">
 <footer>
   <p>&copy; 2026 Edlawit safework. All rights reserved.</p>
 </footer>
+<script>
+const canvas = document.getElementById('logo');
+const ctx = canvas.getContext('2d');
+
+ctx.fillStyle = "#1f5fa8";
+ctx.fillRect(0, 0, 120, 120);
+
+ctx.beginPath();
+ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+
+ctx.fillStyle = "#1f5fa8";
+ctx.font = "bold 36px Arial";
+ctx.textAlign = "center";
+ctx.textBaseline = "middle";
+ctx.fillText("ES", 60, 62);
+</script>
+<script>
+const chart = document.getElementById('skillChart');
+const chartCtx = chart.getContext('2d');
+
+const skills = [
+    { name: "HTML", value: 0.8 },
+    { name: "JS", value: 0.2 },
+   { name: "Python", value: 0.4 }
+];
+
+chartCtx.fillStyle = "black";
+chartCtx.font = "12px Arial";
+chartCtx.textAlign = "center";
+
+skills.forEach((skill, i) => {
+    const height = skill.value * 120;
+    const x = 20 + i * 55;
+    const y = 130 - height;
+
+    chartCtx.fillRect(x, y, 30, height);
+    chartCtx.fillText(skill.name, x + 15, 145);
+});
+</script>
 </body>
+
 </html>
