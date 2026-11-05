@@ -14,6 +14,16 @@
 <h1>Edlawit Safework</h1>
 <img src="images/profile.jpg" alt="portrait of Edlawit Safework smiling" title="Edlawit Safework" width="200" height="200">
 <p>software engineer and web developer.</p>
+<button type="button" 
+onclick="document.getElementById('hireDialog').showModal()">Hire me</button>
+<dialog id="hireDialog">
+ <h2>Available for internships</h2>
+ <p>I am available for internships and freelance web projects from June 2027.</p>
+ <p><a href="#contact">Send me a message</a> or <a href="files/cv.pdf" 
+download>download my CV</a>.</p>
+ <button type="button" 
+onclick="document.getElementById('hireDialog').close()">Close</button>
+</dialog>
 <nav>
     <a href="#about">About</a> /
     <a href="#skills">Skills</a> /
